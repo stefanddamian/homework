@@ -1,0 +1,4 @@
+api:
+  rates:
+    key: "test_key"
+    url: http://localhost:${wiremock.server.port}

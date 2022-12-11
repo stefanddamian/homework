@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+feign:
+  circuitbreaker:
+    enabled: true
+
+api:
+  rates:
+    key: ${API_KEY}
+    url: https://api.apilayer.com:443
+
+cache:
+  rates:
+    timeInSeconds: 60
